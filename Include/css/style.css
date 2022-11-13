@@ -23,7 +23,7 @@ h1 {
     height: 100%;
     width: 0px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     background-color: #111;
@@ -44,10 +44,22 @@ h1 {
     white-space: nowrap;
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
+    z-index: 2;
 }
 
 .sidebar a:hover {
     color: #f1f1f1;
+}
+
+.fade {
+    position: fixed;
+    z-index: 1;
+    height: 101vh;
+    width: 100%;
+    background-color: #000;
+    opacity: 70%;
+    display: none;
+    transition: 0.2s;
 }
 
 .openbtn {
