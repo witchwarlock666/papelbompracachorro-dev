@@ -13,6 +13,12 @@ h1 {
     font-size: 900;
 }
 
+#logo {
+    width: 45px;
+    height: 45px;
+    float: left;
+}
+
 .sidebar {
     height: 100%;
     width: 0px;
@@ -47,14 +53,14 @@ h1 {
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
     color: white;
+    background-color: #555;
     padding: 10px 15px;
     border: none;
     border-radius: 25%;
     transition: 0.2s;
-    margin: 5px 4px 5px 4px;
-    float: left;
+    float: right;
+    display: none;
 }
 
 .openbtn:hover {
@@ -66,17 +72,19 @@ h1 {
     width: 100%;
     background-color: #555;
     overflow: auto;
+    padding: 5px;
 }
 
-.navbar a {
+.navbar .nav-link {
     float: left;
     padding: 12px;
     color: white;
     text-decoration: none;
     font-size: 17px;
+    border-right: 1px solid white;
 }
 
-.navbar a:hover {
+.navbar .nav-link:hover {
     background-color: #000;
 }
 
@@ -95,6 +103,10 @@ h1 {
     background-color: #fff1e8;
 }
 
+.section h1, .section h2 {
+    padding-left: 20px;
+}
+
 .subsection {
     padding-bottom: 10px;
 }
@@ -107,12 +119,12 @@ h1 {
     font-size: 28px;
 }
 
-.section ul {
-    margin-left: 20px;
+.section ul li {
+    padding-left: 15px;
+    margin-bottom: 10px;
 }
 
 p {
-    text-indent: 1em;
     padding: 0 10px;
     margin: 0 10px;
     text-align: justify;
@@ -120,11 +132,15 @@ p {
 }
 
 footer {
-    padding-top: 5px;
+    padding: 5px;
     background-color: #555;
     text-align: center;
     min-height: 1.5rem;
     color: #fff;
+}
+
+#fWhats, #fNome, #fInstaP, #fInstaM {
+    display: inline-block;
 }
 
 @media screen and (max-width: 1355px) {
@@ -151,9 +167,9 @@ footer {
     }
 }
 
-@media screen and (max-width: 830px) {
-    p {
-        text-indent: 0.5em;
+@media screen and (max-width: 949.9px) {
+    #fDash3 {
+        opacity: 0%;
     }
 }
 
@@ -165,8 +181,17 @@ footer {
 
 @media screen and (max-width: 676px) {
     p {
-        text-indent: 0.5em;
         margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 658px) {
+    #fDash3 {
+        opacity: 100%;
+    }
+
+    #fDash2 {
+        opacity: 0%;
     }
 }
 
@@ -176,8 +201,29 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
-    p {
-        
+@media screen and (max-width: 552px) {
+    #fDash3 {
+        opacity: 0%;
+    }
+}
+
+@media screen and (max-width: 394.9px) {
+    #fDash1 {
+        opacity: 0%;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .nav-link {
+        display: none;
+    }
+    .openbtn {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .section h1 {
+        font-size: 32px;
     }
 }
