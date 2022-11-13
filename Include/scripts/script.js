@@ -5,9 +5,9 @@ const openCloseNav = () => {
         sidebar.style.width = "200px";
         sleep(500);
         document.getElementById("fade").style.display = "block"
-        document.getElementById("i").innerHTML = "Atividade 1";
-        document.getElementById("ii").innerHTML = "Atividade 2";
-        document.getElementById("iii").innerHTML = "Atividade 3";
+        document.getElementById("i").innerHTML = " Home";
+        document.getElementById("ii").innerHTML = " Adoções";
+        document.getElementById("iii").innerHTML = " Sobre";
     }
     else {
         sidebar.style.width = "0px";
