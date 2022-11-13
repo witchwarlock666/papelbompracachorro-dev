@@ -14,8 +14,8 @@ h1 {
 }
 
 #logo {
-    width: 45px;
     height: 45px;
+    width: auto;
     float: left;
 }
 
@@ -225,7 +225,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 355px) {
     .nav-link {
         display: none;
     }
