@@ -17,6 +17,7 @@ h1 {
     height: 45px;
     width: auto;
     float: left;
+    padding: 5px;
 }
 
 .sidebar {
@@ -82,14 +83,14 @@ h1 {
 
 .navbar {
     width: 100%;
-    background-color: #555;
+    background-color: #ad5720;
     overflow: auto;
-    padding: 5px;
 }
 
 .navbar .nav-link {
     float: left;
     padding: 12px;
+    margin-top: 5px;
     color: white;
     text-decoration: none;
     font-size: 17px;
@@ -136,6 +137,23 @@ h1 {
     margin-bottom: 10px;
 }
 
+.section-adocao {
+    display: flex;
+    justify-content: center;
+}
+
+.section-adocao .section {
+    width: 50%;
+}
+
+.container-adocao {
+    width: 100%;
+}
+
+.img-adocao, .img-adocao img {
+    width: 100%;
+}
+
 p {
     padding: 0 10px;
     margin: 0 10px;
@@ -145,7 +163,7 @@ p {
 
 footer {
     padding: 5px;
-    background-color: #555;
+    background-color: #ad5720;
     text-align: center;
     min-height: 1.5rem;
     color: #fff;
@@ -165,17 +183,29 @@ footer {
     .section {
         margin: 40px;
     }
+
+    .section-adocao .section {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     .section {
         margin: 25px;
     }
+
+    .section-adocao .section {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 1025px) {
     .section {
         margin: 10px;
+    }
+
+    .section-adocao .section {
+        width: 75%;
     }
 }
 
@@ -188,6 +218,10 @@ footer {
 @media screen and (max-width: 730px) {
     .section {
         margin: 5px;
+    }
+
+    .section-adocao .section {
+        width: 80%;
     }
 }
 
@@ -210,6 +244,10 @@ footer {
 @media screen and (max-width: 650px) {
     p {
         line-height: 140%;
+    }
+
+    .section-adocao .section {
+        width: 90%;
     }
 }
 
