@@ -116,6 +116,31 @@ h1 {
     padding: 0px 10px;
     margin: 64px;
     background-color: #fff1e8;
+    border-radius: 10px;
+}
+
+.img-section {
+    min-width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-section img {
+    max-width: 75%;
+    margin-bottom: 10px;
+}
+
+.video-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    min-width: 50%;
+}
+
+.video-section video {
+    max-width: 50%;
 }
 
 .section h1, .section h2 {
@@ -124,6 +149,15 @@ h1 {
 
 .subsection {
     padding-bottom: 10px;
+}
+
+.subsection-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subsection-item {
+    display: block;
 }
 
 .section h1 {
@@ -139,9 +173,16 @@ h1 {
     margin-bottom: 10px;
 }
 
+.adocao {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+}
+
 .section-adocao {
     display: flex;
     justify-content: center;
+    width: 50%;
 }
 
 .section-adocao .section {
@@ -171,8 +212,24 @@ footer {
     color: #fff;
 }
 
+footer span a {
+    text-decoration: underline;
+    color: inherit;
+}
+
 #fWhats, #fNome, #fInstaP, #fInstaM {
     display: inline-block;
+}
+
+@media screen and (max-width: 1370px) {
+    .subsection-flex {
+        display: block;
+    }
+
+    .img-section {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 @media screen and (max-width: 1355px) {
@@ -217,6 +274,17 @@ footer {
     }
 }
 
+@media screen and (max-width: 755px) {
+    .video-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-section video {
+        margin-bottom: 10px;
+    }
+}
+
 @media screen and (max-width: 730px) {
     .section {
         margin: 5px;
@@ -253,9 +321,21 @@ footer {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .video-section video {
+        max-width: 75%;
+    }
+}
+
 @media screen and (max-width: 552px) {
     #fDash3 {
         opacity: 0%;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .video-section video {
+        max-width: 90%;
     }
 }
 
@@ -265,12 +345,18 @@ footer {
     }
 }
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 365px) {
     .nav-link {
         display: none;
     }
     .openbtn {
         display: inline-block;
+    }
+}
+
+@media screen and (max-width: 342px) {
+    .video-section video {
+        max-width: 95%;
     }
 }
 
